@@ -27,7 +27,14 @@ My pipeline consists in 6 steps as you can find on the code comments:
 
 1) Convert the image to grayscale
 
-[image2]: ./pipeline_write_up_images/step_1_grayscale.png "Step 1 - Convert the image to grayscale"
+<img src="pipeline_write_up_images/step_1_grayscale.png" width="480" alt="Step 1 - Convert the image to grayscale" />
+
+2) Apply a Gaussian Blur - even out the noise
+
+<img src="pipeline_write_up_images/step_2_gaussian_blur.png" width="480" alt="Step 2 - Apply Gaussian Blur" />
+
+3) Apply the algorithm to draw edges in the image - Canny Edge detection
+
 
 
 ### 2. Identify potential shortcomings with your current pipeline
