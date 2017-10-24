@@ -23,25 +23,27 @@ The goals / steps of this project are the following:
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
+My pipeline consists in 6 steps as you can find on the code comments:
 
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
+1) Convert the image to grayscale
 
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
-
-![alt text][image1]
+[image1]: ./pipeline_write_up_images/step_1_grayscale.png "Step 1 - Convert the image to grayscale"
 
 
 ### 2. Identify potential shortcomings with your current pipeline
 
 
-One potential shortcoming would be what would happen when ... 
+Shortcomings on my pipeline:
 
-Another shortcoming could be ...
-
+- The region of interest is hardcoded and doesn't adapt to different videos (camera position in relation to the lane)
+- The Hough algorithm parameters are hardcoded - they are set as sensible values but with variations in the line shapes
+and type of line (e.g. dashed, double-dashed, etc) the current implementation wouldn't work
+- Unsure how it could react on curves, etc
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
+Suggested improvements:
 
-Another potential improvement could be to ...
+- The pipeline could dynamically calculate the region of interest (e.g. averaging out the distance between left and right
+lines)
+- The pipeline could that into account the camera positioning
