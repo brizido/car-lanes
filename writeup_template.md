@@ -27,7 +27,7 @@ My pipeline consists in 6 steps as you can find on the code comments:
 
 1) Convert the image to grayscale
 
-[image1]: ./pipeline_write_up_images/step_1_grayscale.png "Step 1 - Convert the image to grayscale"
+[image2]: ./pipeline_write_up_images/step_1_grayscale.png "Step 1 - Convert the image to grayscale"
 
 
 ### 2. Identify potential shortcomings with your current pipeline
