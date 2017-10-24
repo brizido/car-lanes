@@ -35,6 +35,20 @@ My pipeline consists in 6 steps as you can find on the code comments:
 
 3) Apply the algorithm to draw edges in the image - Canny Edge detection
 
+<img src="pipeline_write_up_images/step_3_canny_edge_detection.png" width="480" alt="Step 3 - Apply Canny Edge" />
+
+4) Select a region of interest - this will select a triangle on the image and put everything else in black
+
+<img src="pipeline_write_up_images/step_4_region_interest.png" width="480" alt="Step 3 - Apply Canny Edge" />
+
+5) Draw lines - Hough algorithm. This will extrapolate the lines. I have used polyfit to find the polinomial and 
+coeficients to then draw 2x single lines. We end up with a black image with the lines drawn in red
+
+<img src="pipeline_write_up_images/step_5_hough.png" width="480" alt="Step 3 - Apply Canny Edge" />
+
+6) Overlap the original image with the image calculated in the previous step. 
+
+<img src="pipeline_write_up_images/step_6_overlap_images.png" width="480" alt="Step 3 - Apply Canny Edge" />
 
 
 ### 2. Identify potential shortcomings with your current pipeline
